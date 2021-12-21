@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <title> MS PowerPoint Try Out </title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "main.js"> </script>
+
+        <link rel=”stylesheet” href = ”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel
+         = ”nofollow” integrity = ”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” 
+        crossorigin = ”anonymous”>
+
+        <script src = ”https://code.jquery.com/jquery-3.2.1.slim.min.js” integrity = ”sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN” crossorigin=”anonymous”></script>
+
+    <script src = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js integrity = ”sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q” crossorigin=”anonymous”></script>
+
+    <script src = ”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js” integrity = ”sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl” crossorigin=”anonymous”></script>
+    </head>
+    <body>
+        <h2 class = "heading"> MS Power Point </h2>
+        <hr>
+        <div id = "file_name_div" class = "btn btn-danger"> 
+            <br>
+            <h4 id = "note_enter_file_name"> Enter file name: </h4>
+            <input type = "text" placeholder = "Enter file name" id = "file_name_input">
+            <br> <br>
+            <h2 id = "lim_sl_n"> NOTE: As this is not official Powerpoint, there is only a limited number 
+                of slides. That is, five slides.
+            <br>
+            NOTE: The changes you apply to the below slide inputs wont change these input slides, scroll down
+            to the output slides to see the changes </h2>
+        <br> <br>
+        </div>
+        <br>
+        <hr>
+        <center>
+            <label class = "slide_number" id = "slide_one_label"> Slide 1 </label>
+            <br>
+            <div id = "slide_number_one_div" class = "slides"> 
+                <center>
+                    <br>
+                    <input id = "slide_1_title" type = "text" placeholder = "Enter Title">
+                    <br> <br>
+                    <button id = "save_s1_t" onclick = "save_s1_t()"> Save Slide Title </button>
+                    <br> <br>
+                    <input id = "slide_1_subtitle" type = "text" placeholder = "Enter Subtitle">
+                    <br> <br>
+                    <button id = "save_s1_s" onclick = "save_s1_s()"> Save Slide Subtitle </button>
+                    <hr>
+                    <label class = "slide_note"> NOTE: In the Title, it is recomended to write your name,
+                        and in the subtitle, your about. </label>
+                        <br> <br>
+                        <input class = "change_back_color" type = "text" id = "b_c_s1" placeholder = "Write Color Name">
+                        <br> <br>
+                        <button class = "change_back_color_confirm" onclick = "change_back_color1()"> Change Background Color </button>
+                        <br> <br>
+                </center>
+            </div>
+            <br>
+            <hr>
+            <label class = "slide_number" id = "slide_one_label"> Slide 2 </label>
+            <br>
+            <div id = "slide_number_two_div" class = "slides"> 
+                <center>
+                    <br>
+                    <input id = "slide_2_title" type = "text" placeholder = "Enter Title">
+                    <br> <br>
+                    <button id = "save_s2_t" onclick = "save_s2_t()"> Save Slide Title </button>
+                    <br> <br>
+                    <input id = "slide_2_content" type = "text" placeholder = "Enter Content">
+                    <br> <br>
+                    <button id = "save_s2_c" onclick = "save_s2_c()"> Save Slide Content </button>
+                    <hr>
+                    <label class = "slide_note"> NOTE: In the Title, it is recomended to write what this slide 
+                        is about, and in the content input, the the research under the topic. </label>
+                        <br> <br>
+                        <input class = "change_back_color" type = "text" placeholder = "Write Color Name" id = "b_c_s2">
+                        <br> <br>
+                        <button class = "change_back_color_confirm" onclick = "change_back_color2()"> Change Background Color </button>
+                        <br> <br>
+                </center>
+            </div>
+            <br>
+            <hr>
+            <label class = "slide_number" id = "slide_one_label"> Slide 3 </label>
+            <br>
+            <div id = "slide_number_three_div" class = "slides"> 
+                <center>
+                    <br>
+                    <input id = "slide_3_title" type = "text" placeholder = "Enter Title">
+                    <br> <br>
+                    <button id = "save_s3_t" onclick = "save_s3_t()"> Save Slide Title </button>
+                    <br> <br>
+                    <input id = "slide_3_content" type = "text" placeholder = "Enter Content">
+                    <br> <br>
+                    <button id = "save_s3_c" onclick = "save_s3_c()"> Save Slide Content </button>
+                    <hr>
+                        <input class = "change_back_color" type = "text" placeholder = "Write Color Name" id = "b_c_s3">
+                        <br> <br>
+                        <button class = "change_back_color_confirm" onclick = "change_back_color3()"> Change Background Color </button>
+                        <br> <br>
+                </center>
+            </div>
+            <br>
+            <hr>
+            <label class = "slide_number" id = "slide_one_label"> Slide 4 </label>
+            <br>
+            <div id = "slide_number_four_div" class = "slides"> 
+                <center>
+                    <br>
+                    <input id = "slide_4_title" type = "text" placeholder = "Enter Title">
+                    <br> <br>
+                    <button id = "save_s4_t" onclick = "save_s4_t()"> Save Slide Title </button>
+                    <br> <br>
+                    <input id = "slide_4_content" type = "text" placeholder = "Enter Content">
+                    <br> <br>
+                    <button id = "save_s4_c" onclick = "save_s4_c()"> Save Slide Content </button>
+                    <hr>
+                        <input class = "change_back_color" type = "text" placeholder = "Write Color Name" id = "b_c_s4">
+                        <br> <br>
+                        <button class = "change_back_color_confirm" onclick = "change_back_color4()"> Change Background Color </button>
+                        <br> <br>
+                </center>
+            </div>
+            <br>
+            <hr>
+            <label class = "slide_number" id = "slide_one_label"> Slide 5 (Thank You Slide) </label>
+            <br>
+            <div id = "slide_number_five_div" class = "slides"> 
+                <center>
+                    <br>
+                    <input id = "slide_5_title" type = "text" placeholder = "End the Presentation">
+                    <br> <br>
+                    <button id = "save_s5_t" onclick = "save_s5_t()"> Save Slide Title </button>
+                    <br> <br>
+                        <input class = "change_back_color" type = "text" placeholder = "Write Color Name" id = "b_c_s5">
+                        <br> <br>
+                        <button class = "change_back_color_confirm" onclick = "change_back_color5()"> Change Background Color </button>
+                        <br> <br>
+                </center>
+            </div>
+            <hr>
+            <h3 id = "output_heading"> Output (You can go back and edit the slides) </h3>
+            <br>
+            <label class = "slide_number" id = "out_slide_one_label"> Slide 1 </label>
+            <br>
+            <div id = "slide_number_one_div_out" class = "slides_OUT"> 
+                <center>
+                    <br>
+                    <label id = "out_s1_t"> Title: </label>
+                    <br> <br>
+                    <label id = "out_s1_s"> Subtitle: </label> 
+                    <br> <br>
+                </center>
+            </div>
+            <br>
+            <label class = "slide_number" id = "out_slide_two_label"> Slide 2 </label>
+            <br>
+            <div id = "slide_number_two_div_out" class = "slides_OUT"> 
+                <center>
+                    <br>
+                    <label id = "out_s2_t"> Title: </label>
+                    <br> <br>
+                    <label id = "out_s2_c"> Content: </label> 
+                    <br> <br>
+                </center>
+            </div>
+            <br>
+            <label class = "slide_number" id = "out_slide_three_label"> Slide 3 </label>
+            <br>
+            <div id = "slide_number_three_div_out" class = "slides_OUT"> 
+                <center>
+                    <br>
+                    <label id = "out_s3_t"> Title: </label>
+                    <br> <br>
+                    <label id = "out_s3_c"> Content: </label> 
+                    <br> <br>
+                </center>
+            </div>
+            <br>
+            <label class = "slide_number" id = "out_slide_four_label"> Slide 4 </label>
+            <br>
+            <div id = "slide_number_four_div_out" class = "slides_OUT"> 
+                <center>
+                    <br>
+                    <label id = "out_s4_t"> Title: </label>
+                    <br> <br>
+                    <label id = "out_s4_c"> Content: </label> 
+                    <br> <br>
+                </center>
+            </div>
+            <br>
+            <label class = "slide_number" id = "out_slide_five_label"> Slide 5 </label>
+            <br>
+            <div id = "slide_number_five_div_out" class = "slides_OUT"> 
+                <center>
+                    <br>
+                    <label id = "out_s5_t"> Title: </label>
+                    <br> <br>
+                </center>
+            </div>
+        </center>
+    </body>
+</html>
